@@ -1,19 +1,21 @@
 <template>
-  <Dashboard></Dashboard>
+  <div id="app">
+    <Dashboard></Dashboard>
+  </div>
 </template>
 
 <script>
-import Dashboard from './components/Dashboard'
+import Dashboard from "./components/Dashboard";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Dashboard
   },
-  data () {
+  data() {
     return {
       //
-    }
+    };
   }
-}
+};
 </script>
