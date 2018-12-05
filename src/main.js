@@ -6,7 +6,8 @@ import * as VueGoogleMaps from 'vue2-google-maps';
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyABHtsig9fZgft0GylpF4Pt3BywI0R_J-c',
-    libraries: 'places'
+    libraries: 'places',
+    disableDefaultUI: true
   }
 });
 
