@@ -1,10 +1,6 @@
 <template>
   <v-app id="event-manager">
-    <v-navigation-drawer
-      v-model="drawer"
-      fixed
-      app
-    >
+    <v-navigation-drawer v-model="drawer" fixed app>
       <v-list dense>
         <v-list-tile>
           <v-list-tile-action>
@@ -30,10 +26,7 @@
     </v-toolbar>
     <v-content>
       <v-container fluid fill-height pa-0>
-        <v-layout
-          justify-center
-          align-center
-        >
+        <v-layout justify-center align-center>
           <v-flex fill-height d-flex xs12>
             <Map></Map>
           </v-flex>
@@ -47,17 +40,17 @@
 </template>
 
 <script>
-import Map from './Map';
+import Map from "./Map";
 
-  export default {
-    components: {
-      Map,
-    },
-    data: () => ({
-      drawer: null
-    }),
-    props: {
-      source: String
-    }
+export default {
+  components: {
+    Map
+  },
+  data: () => ({
+    drawer: null
+  }),
+  props: {
+    source: String
   }
+};
 </script>
