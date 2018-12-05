@@ -5,7 +5,6 @@
       style="height: 100%"
       :center="location"
       :zoom="14"
-      :options="{disableDefaultUI:true}"
     >
       <gmap-marker
         v-for="(event, index) in events"
