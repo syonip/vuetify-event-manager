@@ -2,10 +2,10 @@
   <div>
     <gmap-map
       ref="mapRef"
+      style="height: 100%"
       :center="location"
       :zoom="14"
       :options="{disableDefaultUI:true}"
-      style="width:100%;  height: 400px;"
     >
       <gmap-marker
         v-for="(event, index) in events"

@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="event-manager">
     <v-navigation-drawer
       v-model="drawer"
       fixed
@@ -26,15 +26,15 @@
     </v-navigation-drawer>
     <v-toolbar color="indigo" dark fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Event Manager</v-toolbar-title>
     </v-toolbar>
     <v-content>
-      <v-container fluid fill-height>
+      <v-container fluid fill-height pa-0>
         <v-layout
           justify-center
           align-center
         >
-          <v-flex text-xs-center>
+          <v-flex fill-height d-flex xs12>
             <Map></Map>
           </v-flex>
         </v-layout>
