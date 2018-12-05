@@ -1,5 +1,7 @@
 <template>
-  <Dashboard></Dashboard>
+  <div id="app">
+    <Dashboard></Dashboard>
+  </div>
 </template>
 
 <script>

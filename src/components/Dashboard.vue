@@ -35,7 +35,7 @@
           align-center
         >
           <v-flex text-xs-center>
-            Map
+            <Map></Map>
           </v-flex>
         </v-layout>
       </v-container>
@@ -47,7 +47,12 @@
 </template>
 
 <script>
+import Map from './Map';
+
   export default {
+    components: {
+      Map,
+    },
     data: () => ({
       drawer: null
     }),
